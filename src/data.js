@@ -56,7 +56,7 @@ window.WorldBank = {
   averageCompute: (dataBase) => {
     const sumatoria = dataBase.reduce(function(acumulator, nextValue) {
       return acumulator + nextValue;
-    },0);
+    }, 0);
     let promedio = sumatoria / dataBase.length;
     return promedio;
   }
