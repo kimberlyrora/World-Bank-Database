@@ -2,11 +2,11 @@
 
 ## Índice
 
-* [Descripción](#descripción)
+* [Descripción](#resumen-del-proyecto)
 * [Definición del producto](#definición-del-producto)
 * [Historias de usuarix](#historias-de-usuario)
 * [Diseño de la Interfaz de Usuarix](#diseño-interfaz-usuarix)
-* [Implementación de la Interfaz de Usuario (HTML/CSS/JS)](#implementación-de-la-Interfaz-de-Usuario-(HTML/CSS/JS))
+* [Implementación de la Interfaz de Usuario (HTML/CSS/JS)]()
 
 ***
 
@@ -65,11 +65,24 @@ HISTORIA 5 :
 
 ### Prototipo de baja fidelidad
 Se realizaron diversas iteraciones, ya que a medida que avanzaba el modifico tanto mobile como desktop; a causa de los testeos de usabilidad, en los cuales, los usuarios indicaban si las soluciones eran satisfactorias para sus problemas o no. A partir de ellos se agregaron o eliminaron fragmentos del diseño asi también las mejore que se le podrian aplicar al diseño del proyecto.
-<IMAGENES>
+
+**Primera iteración**
+![1 iteracion total](https://user-images.githubusercontent.com/45085970/51090896-0e3a4380-1751-11e9-8d3c-0cce8d8ebc00.png)
+
+**Segunda y tercera iteración**
+![2 y 3 iteracion total](https://user-images.githubusercontent.com/45085970/51091033-c4525d00-1752-11e9-99fc-cf562a8cf72a.png)
+
+**Cuarta iteración**
+![4 iteracion](https://user-images.githubusercontent.com/45085970/51091102-d41e7100-1753-11e9-8ee2-d8c65d98b0c6.png)
 
 ### Prototipo de alta fidelidad
 También se realizaron diversos prototipos de alta fidelidad, ya que debido a que las iteraciones se modificaron, tuvimos que modificar nuestros primeros diseños. Finalmente, después de aprobar el testeo de usabilidad se realizó en diseño final, que se buscó implementar en proyecto.
-<IMAGENES>
+
+**Primera iteración**
+![primera iteracion alta](https://user-images.githubusercontent.com/45085970/51091412-527d1200-1758-11e9-9d11-14d2cbec5a19.png)
+
+**Última iteración**
+![iteracion ultima](https://user-images.githubusercontent.com/45085970/51091310-2614c600-1757-11e9-84dc-a8709c3a10cd.png)
 
 ## Implementación de la Interfaz de Usuario (HTML/CSS/JS)
 La implementación de la interfaz de usuario también tuvo muchos cambios, la causa principal fue la aprobación del testeo de usabilidad. El primer diseño se implementó la segunda semana; sin embargo, al no pasar el testeo de usabilidad se tuvo que modificar e implementarlo nuevamente con el diseño aprobado lo cual tomó 2 semanas. Durante estas 4 semanas que duró el proyecto se realizó la construcción de la estructura en HTML, también funcionalidad de la interfaz, que incluye el filtrado, ordenado y  promediado de la data entregada, que fue desarrollada de forma progresiva a través de las emanas, el DOM se integró las últimas semanas, a medida que la funcionalidad se construia.
