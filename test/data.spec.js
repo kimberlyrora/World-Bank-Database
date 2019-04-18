@@ -72,38 +72,39 @@ describe('filterYears es una función', () => {
 // Para parámetro 'dataBase'
 const dataData = [{year: '1960', value: 45.04}, {year: '1990', value: 15.3567}, {year: '2000', value: 30.45}];
 // Para parámetro 'dataType'
-const inputSort1 = 'Años';
-const inputSort2 = 'Valores';
+const inputSort1 = 'Valores';
+const inputSort2 = 'Año';
 // Para parámetro 'orderType'
 const inputOrder1 = 'Mayor';
 const inputOrder2 = 'Menor';
 // Resultados esperados para sortData
-const añosMayor = [{year: '2000', value: 30.45}, {year: '1990', value: 15.3567}, {year: '1960', value: 45.04}];
-const añosMenor = [{year: '1960', value: 45.04}, {year: '1990', value: 15.3567}, {year: '2000', value: 30.45}];
 const valoresMayor = [{year: '1960', value: 45.04}, {year: '2000', value: 30.45}, {year: '1990', value: 15.3567}];
 const valoresMenor = [{year: '1990', value: 15.3567}, {year: '2000', value: 30.45}, {year: '1960', value: 45.04}];
+const añosMayor = [{year: '2000', value: 30.45}, {year: '1990', value: 15.3567}, {year: '1960', value: 45.04}];
+const añosMenor = [{year: '1960', value: 45.04}, {year: '1990', value: 15.3567}, {year: '2000', value: 30.45}];
 
 describe('sortData es una función', () => {
   it('debería ser una función', () => {
     expect(typeof WorldBank.sortData).toBe('function');
   });
+  
+  it('returns `debería retornar un array de objetos ordenados por valores de mayor a menor`', () => {
+    expect(WorldBank.sortData(dataData, inputSort1, inputOrder1)).toEqual(valoresMayor);
+  });
 
   it('returns `debería retornar un array de objetos ordenados por año de mayor a menor`', () => {
-    expect(WorldBank.sortData(dataData, inputSort1, inputOrder1)).toEqual(añosMayor);
+    expect(WorldBank.sortData(dataData, inputSort2, inputOrder1)).toEqual(añosMayor);
+  });
+  
+  it('returns `debería retornar un array de objetos ordenados por valores de menor a mayor`', () => {
+    expect(WorldBank.sortData(dataData, inputSort1, inputOrder2)).toEqual(valoresMenor);
   });
 
   it('returns `debería retornar un array de objetos ordenados por año de menor a mayor`', () => {
-    expect(WorldBank.sortData(dataData, inputSort1, inputOrder2)).toEqual(añosMenor);
-  });
-
-  it('returns `debería retornar un array de objetos ordenados por valores de mayor a menor`', () => {
-    expect(WorldBank.sortData(dataData, inputSort2, inputOrder1)).toEqual(valoresMayor);
-  });
-
-  it('returns `debería retornar un array de objetos ordenados por valores de menor a mayor`', () => {
-    expect(WorldBank.sortData(dataData, inputSort2, inputOrder2)).toEqual(valoresMenor);
+    expect(WorldBank.sortData(dataData, inputSort2, inputOrder2)).toEqual(añosMenor);
   });
 });
+
 // ----------- Testeando averageCompute ----------- //
 // Para parámetro 'dataBase'
 const inputDataValue = [45.04, 30.45, 15.36];
