@@ -662,7 +662,7 @@ footer {
 }
 @media screen and (min-width : 1441px) {
   .result-container{
-    height: 43em;
+    height: 46.5em;
     display: block;
   }
   .search-container, .themes-container, .years-container, .sort-container, .average-container {
@@ -674,6 +674,6 @@ footer {
     grid-template-columns: 270px auto;
     align-content: center;
     justify-content: center;
-    height: 9.4em;
+    height: 10.1em;
 }
 }
