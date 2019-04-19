@@ -209,6 +209,7 @@ h2 {
   color: #002244;
   align-self: center;
   margin: 0;
+  margin-bottom: 14px;
 }
 
 .search-form,
@@ -253,7 +254,7 @@ h2 {
 .themes-form {
   grid-template-columns: 150px 150px;
   grid-gap: 5px 5px;
-  grid-template-rows: 28px 28px;
+  grid-template-rows: 35px 35px;
 }
 
 .topic-btn,
@@ -288,7 +289,7 @@ h2 {
 
 .sort-form {
   grid-template-columns: 28% 28% 20% 2%;
-  grid-template-rows: 45% 45%;
+  grid-template-rows: 55% 55%;
   grid-column-gap: 10px;
   grid-template-areas: 'ind ind ind ind'
     'dataT orderT apply espacio';
@@ -335,6 +336,7 @@ h2 {
 
 /*Impresión de resultados: listas y tablas*/
 .result-container {
+  margin-top:15px;
   height: 400px;
   display: block;
 }
@@ -508,13 +510,14 @@ footer {
   .sort-container,
   .average-container {
     background-color: #002244;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     background-size: cover;
     background-position: center;
     display: grid;
     grid-template-columns: 270px auto;
     align-content: center;
     justify-content: center;
+    height: 8.5em;
   }
 }
 
@@ -536,10 +539,12 @@ footer {
   #sort-container,
   #average-container {
     display: none;
+    margin-top: 15px;
   }
 
   #search-container {
     display: grid;
+    margin-top: 20px;
   }
 
   .themes-form {
@@ -549,13 +554,14 @@ footer {
   }
 
   .result-container {
-    height: 27em;
+    height: 38em;
     display: block;
   }
 
   aside {
     width: 50%;
     float: left;
+    margin-top: 15px;
   }
 
   .menu-back {
@@ -652,5 +658,22 @@ footer {
 #averageBtn:hover {
   background-color: #B88C1D;
   cursor: pointer; 
+}
+}
+@media screen and (min-width : 1441px) {
+  .result-container{
+    height: 43em;
+    display: block;
+  }
+  .search-container, .themes-container, .years-container, .sort-container, .average-container {
+    background-color: #002244;
+    margin-bottom: 8px;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 270px auto;
+    align-content: center;
+    justify-content: center;
+    height: 9.4em;
 }
 }
